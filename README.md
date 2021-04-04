@@ -10,13 +10,13 @@
     <strong>-Theme TBA-</strong>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template/team">Team</a>
+    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/team">Team</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/installation">Installation</a>
+    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/installation">Installation</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/Demo">Demo</a>
+    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/Demo">Demo</a>
    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/git">Short git lesson</a>
+    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/git">Short git lesson</a>
   </p>
 </p>
 
@@ -34,8 +34,8 @@
     <li>
       <a href="#installation">Installation</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li>Prerequisites</li>
+        <li>Getting started</li>
       </ul>
     </li>
     <li><a href="#demo">Demo</a></li>
@@ -61,8 +61,20 @@ Coordinator: Iuliana Marin
 
 
 <!-- GETTING STARTED -->
+
+
 ### Installation
 
+#### Prerequisites
+1. Install mongodb from their website: https://www.mongodb.com/try/download/community <br />
+Additional help for mongodb installation: https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514 <br />
+
+2. Place `C:\Program Files\MongoDB\Server\4.4\bin` in your Environment variables -> System variables -> Path. <br>
+(search environment variables in windows search)<br>
+
+3. (If not installed) Node version 14, (14.15 preferably) https://nodejs.org/download/release/v14.15.0/
+
+#### Getting started
 
 1. Clone the repo
    ```sh
@@ -102,15 +114,13 @@ List member:
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Git commands
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Fork the Project
+- Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+- Push to the Branch (`git push origin feature/AmazingFeature`)
+- Open a Pull Request
 
 
 
