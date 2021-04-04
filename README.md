@@ -8,16 +8,7 @@
 
   <p align="center">
     <strong>-Theme TBA-</strong>
-    <br />
-    <br />
-    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/team">Team</a>
-    ·
-    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/installation">Installation</a>
-    ·
-    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/Demo">Demo</a>
-   ·
-    <a href="https://github.com/Dominiq97/DS_Project_Panselutele/blob/main/README/git">Short git lesson</a>
-  </p>
+    
 </p>
 
 [![V14.15.0 Node](https://img.shields.io/badge/npm-v14.15.0-green)](https://nodejs.org/download/release/v14.15.0/)  ![](https://img.shields.io/badge/Angular-9.0.2-green) [![](https://img.shields.io/badge/mongodb-4.4.4-red)](https://www.mongodb.com/try/download/community) ![](https://img.shields.io/badge/nodemon-6.14.8-blue)
