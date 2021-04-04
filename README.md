@@ -63,43 +63,61 @@ Coordinator: Iuliana Marin
 <!-- GETTING STARTED -->
 
 
-### Installation
-
+### Installation 
+(More documentation on https://curs.upb.ro/course/view.php?id=3417)
 #### Prerequisites
-1. Install mongodb from their website: https://www.mongodb.com/try/download/community <br />
+0. Install mongodb from their website: https://www.mongodb.com/try/download/community <br />
 Additional help for mongodb installation: https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514 <br />
 
-2. Place `C:\Program Files\MongoDB\Server\4.4\bin` in your Environment variables -> System variables -> Path. <br>
+1. Place `C:\Program Files\MongoDB\Server\4.4\bin` in your Environment variables -> System variables -> Path. <br>
 (search environment variables in windows search)<br>
 
-3. (If not installed) Node version 14, (14.15 preferably) https://nodejs.org/download/release/v14.15.0/
+2. (If not installed) Node version 14, (14.15 preferably) https://nodejs.org/download/release/v14.15.0/ <br />
+
+3. VERY IMPORTANT -> Angular/cli version 9 installation:<br />
+`npm install @angular/cli@9` <br />
+Just on this version the project is stable
 
 #### Getting started
 
-1. Clone the repo
+0. Clone the repo
    ```sh
    git clone https://github.com/Dominiq97/DS_Project_Panselutele.git
    ```
-2. Install NPM packages
+1. Install NPM packages
    ```sh
    npm install
    ```
-3. Install express mongoose cors and body-parser
+2. Install express mongoose cors and body-parser
    ```sh
    npm install ng2-slim-loading-bar --save
    ``` 
-4. Install express mongoose cors and body-parser
+3. Install express mongoose cors and body-parser
    ```sh
    npm install rxjs-compat --save
    ``` 
-5. Install express mongoose cors and body-parser
+4. Install express mongoose cors and body-parser
    ```sh
    npm install express body-parser cors mongoose --save
    ```   
-6. Install nodemon (connection with mongo required)
+5. Install nodemon (connection with mongo required)
    ```sh
    npm install nodemon --save-dev
    ```
+6. Open another Command Prompt and start the mongo server: 
+   ```sh
+   mongo
+   ```
+7. Open another Command Prompt and start the node server for APIs in `DS_Project\API`: 
+   ```sh
+   npm start
+   ```
+8. Start your Angular server in the first CMD: 
+   ```sh
+   ng serve
+   ```
+9. Check your `localhost:4200`
+
 
 ## Demo
 New member: 
