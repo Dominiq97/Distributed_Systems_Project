@@ -38,12 +38,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#git">Git commands</a></li>
   </ol>
 </details>
 
@@ -65,33 +61,32 @@ Coordinator: Iuliana Marin
 
 
 <!-- GETTING STARTED -->
-## Installation
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+
+1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Dominiq97/DS_Project_Panselutele.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+3. Install express mongoose cors and body-parser
+   ```sh
+   npm install ng2-slim-loading-bar --save
+   ``` 
+4. Install express mongoose cors and body-parser
+   ```sh
+   npm install rxjs-compat --save
+   ``` 
+5. Install express mongoose cors and body-parser
+   ```sh
+   npm install express body-parser cors mongoose --save
+   ```   
+6. Install nodemon (connection with mongo required)
+   ```sh
+   npm install nodemon --save-dev
    ```
 
 
