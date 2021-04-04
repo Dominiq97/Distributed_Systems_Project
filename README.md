@@ -92,19 +92,13 @@ Coordinator: Iuliana Marin
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
+## Demo
+New member: 
+![alt text](https://user-images.githubusercontent.com/37049614/113505251-43a3f500-9546-11eb-88f7-ef9b73a0d16d.JPG)
+Edit member: 
+![alt text](https://user-images.githubusercontent.com/37049614/113505246-4272c800-9546-11eb-8762-67badabf99d3.JPG)
+List member: 
+![alt text](https://user-images.githubusercontent.com/37049614/113505249-430b5e80-9546-11eb-8061-c309363e8297.JPG)
 
 
 <!-- CONTRIBUTING -->
@@ -120,35 +114,8 @@ Contributions are what make the open source community such an amazing place to b
 
 
 
-<!-- LICENSE -->
-## License
+Project Link: [https://github.com/Dominiq97/DS_Project_Panselutele/](https://github.com/Dominiq97/DS_Project_Panselutele/)
 
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
 
 
 
