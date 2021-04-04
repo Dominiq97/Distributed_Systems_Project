@@ -39,7 +39,7 @@
       </ul>
     </li>
     <li><a href="#demo">Demo</a></li>
-    <li><a href="#git">Git commands</a></li>
+    <li><a href="#git-commands">Git commands</a></li>
   </ol>
 </details>
 
@@ -101,9 +101,6 @@ Additional help for mongodb installation: https://medium.com/@LondonAppBrewery/h
    npm install nodemon --save-dev
    ```
 
-
-
-<!-- USAGE EXAMPLES -->
 ## Demo
 New member: 
 ![alt text](https://user-images.githubusercontent.com/37049614/113505251-43a3f500-9546-11eb-88f7-ef9b73a0d16d.JPG)
@@ -113,11 +110,11 @@ List member:
 ![alt text](https://user-images.githubusercontent.com/37049614/113505249-430b5e80-9546-11eb-8061-c309363e8297.JPG)
 
 
-<!-- CONTRIBUTING -->
 ## Git commands
 
-- Fork the Project
 - Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+- Add your changes to commit (`git add -link_of_changed_files`) or (`git add -A` to put all your changes no matter what)
+- I didn't want that add, reset it (`git reset`)
 - Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 - Push to the Branch (`git push origin feature/AmazingFeature`)
 - Open a Pull Request
@@ -131,20 +128,5 @@ Project Link: [https://github.com/Dominiq97/DS_Project_Panselutele/](https://git
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
 
  
