@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular9crud'`, () => {
+  it(`should have as title 'acvalua'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular9crud');
+    expect(app.title).toEqual('acvalua');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular9crud app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('acvalua app is running!');
   });
 });

@@ -11,7 +11,12 @@
         <a routerLink="members" class="nav-link" routerLinkActive="active">
           Members
         </a>
-      </li> 
+      </li>
+      <li>
+        <a class="nav-link" (click)="authService.SignOut()">
+          <i class="fas fa-sign-out-alt"></i>Log out
+        </a>
+      </li>
     </ul>
   </div>
 </nav>

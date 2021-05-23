@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
+import { AuthService } from "./shared/services/auth.service";
 import {
   NavigationCancel,
   Event,
@@ -15,8 +16,8 @@ import {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular9tutorial';
-  constructor(private loadingBar: SlimLoadingBarService, private router: Router) {
+  title = 'Acvalua';
+  constructor(private loadingBar: SlimLoadingBarService, private router: Router,public authService: AuthService) {
     this.router.events.subscribe((event: Event) => {
       this.navigationInterceptor(event);
     });
