@@ -38,9 +38,21 @@
         </div>
       </div>
       <div class="form-group">
+        <label class="col-md-4">Activity Space</label>
+        <input type="text" class="form-control"
+        formControlName="ActivitySpace"
+        #ActivitySpace
+        [(ngModel)] = "activity.ActivitySpace"/>
+      </div>
+      <div *ngIf="angForm.controls['ActivitySpace'].invalid && (angForm.controls['ActivitySpace'].dirty || angForm.controls['ActivitySpace'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['ActivitySpace'].errors.required">
+          Activity Space is required.
+        </div>
+      </div>
+      <div class="form-group">
         <button type="submit" class="btn btn-primary"
         [disabled]="angForm.pristine || angForm.invalid"
-        (click) = "updateActivity(ActivityName.value, ActivityBio.value, ActivityAge.value)">Update Activity</button>
+        (click) = "updateActivity(ActivityName.value, ActivityBio.value, ActivityAge.value, ActivitySpace.value)">Update Activity</button>
       </div>
     </form>
   </div>

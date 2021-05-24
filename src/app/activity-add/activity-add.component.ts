@@ -18,12 +18,13 @@ export class ActivityAddComponent implements OnInit {
     this.angForm = this.fb.group({
       ActivityName: ['', Validators.required],
       ActivityBio: ['', Validators.required],
-      ActivityAge: ['', Validators.required]
+      ActivityAge: ['', Validators.required],
+      ActivitySpace: ['', Validators.required]
     });
   }
 
-  addActivity(ActivityName, ActivityBio, ActivityAge) {
-    this.as.addActivity(ActivityName, ActivityBio, ActivityAge);
+  addActivity(ActivityName, ActivityBio, ActivityAge, ActivitySpace) {
+    this.as.addActivity(ActivityName, ActivityBio, ActivityAge, ActivitySpace);
     this.router.navigate(['activities']);
   }
 

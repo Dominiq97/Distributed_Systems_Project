@@ -11,6 +11,9 @@ let Activity = new Schema({
   },
   ActivityAge: {
     type: Number
+  },
+  ActivitySpace: {
+    type: Number
   }
 },{
     collection: 'Activity'

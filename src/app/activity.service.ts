@@ -10,11 +10,12 @@ export class ActivityService {
 
   constructor(private http: HttpClient) { }
 
-  addActivity(ActivityName, ActivityBio, ActivityAge) {
+  addActivity(ActivityName, ActivityBio, ActivityAge, ActivitySpace) {
     const obj = {
       ActivityName,
       ActivityBio,
-      ActivityAge
+      ActivityAge,
+      ActivitySpace
     };
     console.log(obj);
     this.http.post(`${this.uri}/add`, obj)
@@ -33,11 +34,12 @@ export class ActivityService {
       .get(`${this.uri}/edit/${id}`);
   }
 
-  updateActivity(ActivityName, ActivityBio, ActivityAge, id) {
+  updateActivity(ActivityName, ActivityBio, ActivityAge, ActivitySpace, id) {
     const obj = {
       ActivityName,
       ActivityBio,
-      ActivityAge
+      ActivityAge,
+      ActivitySpace
     };
     this
       .http

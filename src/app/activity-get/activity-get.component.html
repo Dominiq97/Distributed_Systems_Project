@@ -2,10 +2,10 @@
   <thead>
   <tr>
       <td>Activity Index</td>
-      <td>Activity ID</td>
       <td>Activity Name</td>
       <td>Activity Bio</td>
       <td>Activity Age</td>
+      <td>Activity Space</td>
       <td colspan="1">Actions</td>
   </tr>
   </thead>
@@ -13,10 +13,10 @@
   <tbody>
       <tr *ngFor="let activity of activities; let i = index">
         <td>{{i+1}}</td>
-        <td>{{activity._id}}</td>
         <td>{{ activity.ActivityName }}</td>
         <td>{{ activity.ActivityBio }}</td>
         <td>{{ activity.ActivityAge }}</td>
+        <td>{{ activity.ActivitySpace }}</td>
 
           <td><a [routerLink]="['/edit', activity._id]" class="btn btn-primary">Edit</a>&nbsp;<a (click) = "deleteActivity(activity._id, i)" class="btn btn-danger">Delete</a>
       </tr>
