@@ -20,14 +20,14 @@ export class ActivityEditComponent implements OnInit {
     this.angForm = this.fb.group({
       ActivityName: ['', Validators.required],
       ActivityBio: ['', Validators.required],
-      ActivityAge: ['', Validators.required],
+      ActivityNoParticipants: ['', Validators.required],
       ActivitySpace: ['', Validators.required]
     });
   }
 
-  updateActivity(ActivityName, ActivityBio, ActivityAge, ActivitySpace) {
+  updateActivity(ActivityName, ActivityBio, ActivityNoParticipants, ActivitySpace) {
     this.route.params.subscribe(params => {
-      this.as.updateActivity(ActivityName, ActivityBio, ActivityAge, ActivitySpace, params.id);
+      this.as.updateActivity(ActivityName, ActivityBio, ActivityNoParticipants, ActivitySpace, params.id);
       this.router.navigate(['activities']);
     });
   }

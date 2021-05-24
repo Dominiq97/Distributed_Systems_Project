@@ -9,7 +9,7 @@ let Activity = new Schema({
   ActivityBio: {
     type: String
   },
-  ActivityAge: {
+  ActivityNoParticipants: {
     type: Number
   },
   ActivitySpace: {

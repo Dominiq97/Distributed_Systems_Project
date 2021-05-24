@@ -1,3 +1,7 @@
+<br>
+<br>
+<br>
+
 <div class="card">
   <div class="card-body">
     <form [formGroup]="angForm" novalidate>
@@ -26,19 +30,19 @@
         </div>
       </div>
       <div class="form-group">
-        <label class="col-md-4">Activity Age</label>
+        <label class="col-md-4">Number of Participants</label>
         <input type="text" class="form-control"
-        formControlName="ActivityAge"
-        #ActivityAge
-        [(ngModel)] = "activity.ActivityAge"/>
+        formControlName="ActivityNoParticipants"
+        #ActivityNoParticipants
+        [(ngModel)] = "activity.ActivityNoParticipants"/>
       </div>
-      <div *ngIf="angForm.controls['ActivityAge'].invalid && (angForm.controls['ActivityAge'].dirty || angForm.controls['ActivityAge'].touched)" class="alert alert-danger">
-        <div *ngIf="angForm.controls['ActivityAge'].errors.required">
-          Activity Age is required.
+      <div *ngIf="angForm.controls['ActivityNoParticipants'].invalid && (angForm.controls['ActivityNoParticipants'].dirty || angForm.controls['ActivityNoParticipants'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['ActivityNoParticipants'].errors.required">
+          Number of Participants is required.
         </div>
       </div>
       <div class="form-group">
-        <label class="col-md-4">Activity Space</label>
+        <label class="col-md-4">Activity Space (m^2)</label>
         <input type="text" class="form-control"
         formControlName="ActivitySpace"
         #ActivitySpace
@@ -52,7 +56,7 @@
       <div class="form-group">
         <button type="submit" class="btn btn-primary"
         [disabled]="angForm.pristine || angForm.invalid"
-        (click) = "updateActivity(ActivityName.value, ActivityBio.value, ActivityAge.value, ActivitySpace.value)">Update Activity</button>
+        (click) = "updateActivity(ActivityName.value, ActivityBio.value, ActivityNoParticipants.value, ActivitySpace.value)">Update Activity</button>
       </div>
     </form>
   </div>
