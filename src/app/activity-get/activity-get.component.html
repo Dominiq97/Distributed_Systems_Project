@@ -11,6 +11,7 @@
       <td>Number of Participants</td>
       <td>Activity Space (m^2)</td>
       <td colspan="1">Actions</td>
+      <td>Activity Permission</td>
   </tr>
   </thead>
 
@@ -23,6 +24,7 @@
         <td>{{ activity.ActivitySpace }}</td>
 
           <td><a [routerLink]="['/edit', activity._id]" class="btn btn-primary">Edit</a>&nbsp;<a (click) = "deleteActivity(activity._id, i)" class="btn btn-danger">Delete</a>
+        <td>{{activity.ActivitySpace/activity.ActivityNoParticipants>=1.5 ? 'Allowed' : 'Denied'}}</td>
       </tr>
   </tbody>
 </table>
