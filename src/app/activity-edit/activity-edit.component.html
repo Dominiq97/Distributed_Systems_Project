@@ -1,0 +1,47 @@
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Activity Name</label>
+        <input type="text" class="form-control"
+        formControlName="ActivityName"
+          #ActivityName
+          [(ngModel)] = "activity.ActivityName"/>
+      </div>
+      <div *ngIf="angForm.controls['ActivityName'].invalid && (angForm.controls['ActivityName'].dirty || angForm.controls['ActivityName'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['ActivityName'].errors.required">
+          Activity Name is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Activity Bio </label>
+        <textarea class="form-control" rows = 7 cols = "5"
+        formControlName="ActivityBio"
+        #ActivityBio
+        [(ngModel)] = "activity.ActivityBio"></textarea>
+      </div>
+      <div *ngIf="angForm.controls['ActivityBio'].invalid && (angForm.controls['ActivityBio'].dirty || angForm.controls['ActivityBio'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['ActivityBio'].errors.required">
+          Activity Bio is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Activity Age</label>
+        <input type="text" class="form-control"
+        formControlName="ActivityAge"
+        #ActivityAge
+        [(ngModel)] = "activity.ActivityAge"/>
+      </div>
+      <div *ngIf="angForm.controls['ActivityAge'].invalid && (angForm.controls['ActivityAge'].dirty || angForm.controls['ActivityAge'].touched)" class="alert alert-danger">
+        <div *ngIf="angForm.controls['ActivityAge'].errors.required">
+          Activity Age is required.
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary"
+        [disabled]="angForm.pristine || angForm.invalid"
+        (click) = "updateActivity(ActivityName.value, ActivityBio.value, ActivityAge.value)">Update Activity</button>
+      </div>
+    </form>
+  </div>
+</div>

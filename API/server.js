@@ -4,7 +4,7 @@ const express = require('express'),
     cors = require('cors'),
     mongoose = require('mongoose'),
     config = require('./DB');
-memberRoute = require('./routes/member.route');
+activityRoute = require('./routes/activity.route');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useUnifiedTopology: true, useNewUrlParser: true }).then(
@@ -16,7 +16,7 @@ mongoose.connect(config.DB, { useUnifiedTopology: true, useNewUrlParser: true })
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/members', memberRoute);
+app.use('/activities', activityRoute);
 
 const port = process.env.PORT || 4000;
 

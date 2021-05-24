@@ -4,40 +4,40 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class MemberService {
+export class ActivityService {
 
-  uri = 'http://localhost:4000/members';
+  uri = 'http://localhost:4000/activities';
 
   constructor(private http: HttpClient) { }
 
-  addMember(MemberName, MemberBio, MemberAge) {
+  addActivity(ActivityName, ActivityBio, ActivityAge) {
     const obj = {
-      MemberName,
-      MemberBio,
-      MemberAge
+      ActivityName,
+      ActivityBio,
+      ActivityAge
     };
     console.log(obj);
     this.http.post(`${this.uri}/add`, obj)
       .subscribe(res => console.log('Done'));
   }
 
-  getMembers() {
+  getActivities() {
     return this
       .http
       .get(`${this.uri}`);
   }
 
-  editMember(id) {
+  editActivity(id) {
     return this
       .http
       .get(`${this.uri}/edit/${id}`);
   }
 
-  updateMember(MemberName, MemberBio, MemberAge, id) {
+  updateActivity(ActivityName, ActivityBio, ActivityAge, id) {
     const obj = {
-      MemberName,
-      MemberBio,
-      MemberAge
+      ActivityName,
+      ActivityBio,
+      ActivityAge
     };
     this
       .http
@@ -45,7 +45,7 @@ export class MemberService {
       .subscribe(res => console.log('Done'));
   }
 
-  deleteMember(id) {
+  deleteActivity(id) {
     return this
       .http
       .get(`${this.uri}/delete/${id}`);

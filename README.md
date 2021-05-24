@@ -111,11 +111,11 @@ Just on this version the project is stable
 
 
 ## Demo
-New member: 
+New activity: 
 ![alt text](https://user-images.githubusercontent.com/37049614/113505251-43a3f500-9546-11eb-88f7-ef9b73a0d16d.JPG)
-Edit member: 
+Edit activity: 
 ![alt text](https://user-images.githubusercontent.com/37049614/113505246-4272c800-9546-11eb-8762-67badabf99d3.JPG)
-List member: 
+List activity: 
 ![alt text](https://user-images.githubusercontent.com/37049614/113505249-430b5e80-9546-11eb-8061-c309363e8297.JPG)
 
 

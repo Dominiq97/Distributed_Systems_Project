@@ -5,13 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MemberService } from './member.service';
+import { ActivityService } from './activity.service';
 
 
 import { AppComponent } from './app.component';
-import { MemberAddComponent } from './member-add/member-add.component';
-import { MemberGetComponent } from './member-get/member-get.component';
-import { MemberEditComponent } from './member-edit/member-edit.component';
+import { ActivityAddComponent } from './activity-add/activity-add.component';
+import { ActivityGetComponent } from './activity-get/activity-get.component';
+import { ActivityEditComponent } from './activity-edit/activity-edit.component';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -28,9 +28,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 @NgModule({
   declarations: [
     AppComponent,
-    MemberAddComponent,
-    MemberGetComponent,
-    MemberEditComponent,
+    ActivityAddComponent,
+    ActivityGetComponent,
+    ActivityEditComponent,
     SignInComponent,
     SignUpComponent,
     ForgotPasswordComponent
@@ -46,7 +46,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     AngularFirestoreModule,
     AngularFireDatabaseModule,
   ],
-  providers: [MemberService,AuthService],
+  providers: [ActivityService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

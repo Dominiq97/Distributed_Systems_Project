@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MemberAddComponent } from './member-add/member-add.component';
-import { MemberEditComponent } from './member-edit/member-edit.component';
-import { MemberGetComponent } from './member-get/member-get.component';
+import { ActivityAddComponent } from './activity-add/activity-add.component';
+import { ActivityEditComponent } from './activity-edit/activity-edit.component';
+import { ActivityGetComponent } from './activity-get/activity-get.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
@@ -16,16 +16,16 @@ const routes: Routes = [
   { path: 'register-user', component: SignUpComponent, canActivate:[SecureInnerPagesGuard] },
   { path: 'forgot-password', component: ForgotPasswordComponent, canActivate:[SecureInnerPagesGuard] },
   {
-    path: 'member/create',
-    component: MemberAddComponent, canActivate:[AuthGuard]
+    path: 'activity/create',
+    component: ActivityAddComponent, canActivate:[AuthGuard]
   },
   {
     path: 'edit/:id',
-    component: MemberEditComponent, canActivate:[AuthGuard]
+    component: ActivityEditComponent, canActivate:[AuthGuard]
   },
   {
-    path: 'members',
-    component: MemberGetComponent, canActivate:[AuthGuard]
+    path: 'activities',
+    component: ActivityGetComponent, canActivate:[AuthGuard]
   }
 ];
 
