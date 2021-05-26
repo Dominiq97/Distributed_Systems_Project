@@ -46,7 +46,6 @@
 This project is made by:<br />
 <strong>Stoian</strong> Delia Ana-Maria<br />
 <strong>Dumitrache</strong> Ioana<br />
-<strong>Darla</strong> Ion Cristian<br />
 <strong>Catana</strong> Dominic Costin<br /><br />
 Coordinator: Iuliana Marin
 
