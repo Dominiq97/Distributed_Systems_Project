@@ -19,12 +19,13 @@ export class ActivityAddComponent implements OnInit {
       ActivityName: ['', Validators.required],
       ActivityBio: ['', Validators.required],
       ActivityNoParticipants: ['', Validators.required],
-      ActivitySpace: ['', Validators.required]
+      ActivitySpace: ['', Validators.required],
+      ActivityReport:['']
     });
   }
 
-  addActivity(ActivityName, ActivityBio, ActivityNoParticipants, ActivitySpace) {
-    this.as.addActivity(ActivityName, ActivityBio, ActivityNoParticipants, ActivitySpace);
+  addActivity(ActivityName, ActivityBio, ActivityNoParticipants, ActivitySpace, ActivityReport) {
+    this.as.addActivity(ActivityName, ActivityBio, ActivityNoParticipants, ActivitySpace, ActivitySpace/ActivityNoParticipants);
     this.router.navigate(['activities']);
   }
 

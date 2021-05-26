@@ -28,3 +28,9 @@
       </tr>
   </tbody>
 </table>
+
+<ejs-chart id="chart-container" [primaryXAxis]='primaryXAxis' [primaryYAxis]='primaryYAxis' [legendSettings]='legendSettings' [tooltip]='tooltip' [title]='title'>
+  <e-series-collection>
+      <e-series [dataSource]='chartData' type='Line' xName='ActivityName' yName="ActivityReport"  xLabel="Activity Name" [marker]='marker'></e-series>
+  </e-series-collection>
+</ejs-chart>

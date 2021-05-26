@@ -47,6 +47,7 @@ activityRoutes.route('/update/:id').post(function (req, res) {
       activity.ActivityBio = req.body.ActivityBio;
       activity.ActivityNoParticipants = req.body.ActivityNoParticipants;
       activity.ActivitySpace = req.body.ActivitySpace;
+      activity.ActivityReport = req.body.ActivityReport;
       activity.save().then(activity => {
         res.json('Update complete');
       })

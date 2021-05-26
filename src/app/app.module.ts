@@ -7,7 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ActivityService } from './activity.service';
 
-
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
+import { CategoryService, LegendService,TooltipService, DataLabelService, LineSeriesService} from '@syncfusion/ej2-angular-charts';
 import { AppComponent } from './app.component';
 import { ActivityAddComponent } from './activity-add/activity-add.component';
 import { ActivityGetComponent } from './activity-get/activity-get.component';
@@ -37,6 +38,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
   ],
   imports: [
     BrowserModule,
+    ChartModule,
     SlimLoadingBarModule,
     AppRoutingModule,
     FormsModule,
@@ -46,7 +48,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     AngularFirestoreModule,
     AngularFireDatabaseModule,
   ],
-  providers: [ActivityService,AuthService],
+  providers: [ActivityService,AuthService, CategoryService, LegendService,TooltipService, DataLabelService, LineSeriesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

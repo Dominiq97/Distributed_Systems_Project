@@ -14,7 +14,11 @@ let Activity = new Schema({
   },
   ActivitySpace: {
     type: Number
-  }
+  },
+  ActivityReport: {
+    type: Number
+  },
+
 },{
     collection: 'Activity'
 });

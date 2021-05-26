@@ -50,10 +50,16 @@
           Activity Space is required.
         </div>
       </div>
+      <div class="form-group" style="display: none;">
+        <label class="col-md-4">Activity report (m^2)</label>
+        <input type="text" class="form-control"
+        formControlName="ActivityReport"
+        #ActivityReport/>
+      </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary"
         [disabled]="angForm.pristine || angForm.invalid"
-        (click) = "addActivity(ActivityName.value, ActivityBio.value, ActivityNoParticipants.value, ActivitySpace.value)">Create Activity</button>
+        (click) = "addActivity(ActivityName.value, ActivityBio.value, ActivityNoParticipants.value, ActivitySpace.value, ActivityReport)">Create Activity</button>
       </div>
     </form>
   </div>
